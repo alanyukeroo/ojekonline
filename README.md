@@ -12,8 +12,11 @@ Mikroservis akan terdiri dari
 5. Push Notification service
 6. Driver/User rating service
 
-Semua akan dicode dengan Go+AWS jika menginginkan high performance, 
+Semua akan dicode dengan Go+AWS jika menginginkan high performance karena Go sangat low latency dan mendukung multithreading, 
 akan tetapi jika deadline sangat mepet bisa sementara menggunakan Ruby on Rails+Heroku.
+
+
+
 
 
 Question 2
@@ -23,3 +26,10 @@ Jelaskan solusi tersebut beserta alasannya.
 
 Answer 2
 1. Untuk mengenali(authentication) dan mengijinkan(authorization) akan digunakan token yang temporary.
+Alasan penggunaan temporary token untuk menambah security sehingga jika token dicuri datanya hanya bisa digunakan sementara saja.
+
+
+Question 3
+
+Answer 3
+In this repo. no unit test.
